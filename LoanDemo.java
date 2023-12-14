@@ -138,6 +138,7 @@ class LoanDemo {
                     System.out.println("Invalid option");
             }
         }
+        in.close();
     }
 }
 

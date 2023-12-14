@@ -1,6 +1,5 @@
 // Create class BankAccount with the following attributes: customerId – long,customerName – String, accounted – long, balance – double. Implement the following methods in this class. DepositAmonut(double amount) - adds the amount to existing balance and returns new balance WithdrawAmount(double amount) - deducts the amount from existing balance and returns new balance.However, if amount is greater than balance, returns -1. AddInterest(double percent) - adds amount based on interest percentage and returns new balance. In BankDemo class create bank account object and test above methods. Reuse the BankAccount and BankAccountDemo classes. Create array of bank account objects. Perform the deposit, withdraw operation for the given account number.If the Account Id not found in the array of objects, display proper error message.Reuse the BankAccount class created above. Modify the program to accept input from the user. Add InputMismatchException to check whether the user entered correct numerical values. If the user enters invalid numbers (Ex. Instead of valid amount, strings entered as input) catch the exception and display valid error messages. Create a user defined exception InvalidAmountException. If the user enter negative amount rise this exception and handle it. Modify the same code, handle InvalidAmountException in main method / in deposit, withdraw methods. Modify the same code using throws key word and study the usage of throws key word.
 import java.util.Scanner;
-import java.io.*;
 import java.util.InputMismatchException;
 
 // Custom exception class for handling invalid amounts
@@ -127,5 +126,6 @@ class BankAccountDemo {
                 System.out.println("Error: " + e.getMessage());
             }
         }
+        in.close();
     }
 }

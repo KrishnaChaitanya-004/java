@@ -89,5 +89,6 @@ class ThreadDemo {
         }
 
         System.out.println("Main Thread Terminating");
+        in.close();
     }
 }
